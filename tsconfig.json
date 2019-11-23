@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test.*"]
+}
