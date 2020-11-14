@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "noImplicitAny": true,
+    "baseUrl": "/",
+    "declaration": false,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
     "moduleResolution": "node",
-    "outDir": "dist",
+    "outDir": "./dist",
     "sourceMap": true,
-    "target": "es6"
+    "strict": true,
+    "target": "ES5"
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.test.*"]
+  "exclude": ["dist", "node_modules", "src/**/*.test.*"],
+  "include": ["src/**/*"]
 }

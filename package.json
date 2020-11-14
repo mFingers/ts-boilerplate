@@ -1,26 +1,40 @@
 {
   "name": "ts-boilerplate",
   "version": "0.0.1",
-  "description": "Boilerplate for starting a project with TypeScript, Jest, ESLint, and Prettier",
+  "description": "A React boilerplate for starting a project with TypeScript, Jest, ESLint, and Prettier",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run lint && rm -rf dist && tsc",
+    "build": "npm run lint && rm -rf dist && tsc --noEmit && webpack",
+    "start": "webpack serve",
     "lint": "eslint -c .eslintrc.json src/**/*",
     "test": "jest"
   },
   "author": "Michael Falanga",
   "license": "UNLICENSED",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.15",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^4.5.0",
     "jest": "^26.6.2",
     "prettier": "^2.1.2",
     "ts-jest": "^26.4.3",
-    "typescript": "^4.0.5"
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }

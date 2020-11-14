@@ -2,6 +2,7 @@
 
 This project is setup with:
 
+- React
 - TypeScript
 - Jest
 - ESLint for syntax checking
@@ -21,6 +22,13 @@ You may have some questions.  Here are the answers.  There may be better answers
 
 ESLint is configured ONLY for syntax and problem checking - NOT code formatting!
 [ESLint formatting rules are disabled](https://prettier.io/docs/en/integrating-with-linters.html#eslint), and all code [formatting rules](.prettierrc) run through Prettier.
+
+### Running
+```
+npm run start
+```
+
+Then open your browser to [http://localhost:8080](http://localhost:8080)
 
 ### Unit Tests
 
